@@ -1,0 +1,228 @@
+/* div{
+    text-decoration: none;
+} */
+.hd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-bottom: 0.5px solid rgb(171, 171, 171); */
+    position: relative;
+    padding: 15px;
+}
+
+.hd span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hd h2 {
+    color: #3a5a40;
+    margin-left: 0px;
+    font-size: large;
+}
+
+.hd div h2 a{
+    text-decoration: none;
+    color: #3a5a40;
+    width: fit-content;
+}
+
+i {
+    color: #3a5a40;
+    text-decoration: none;
+}
+
+.username h2 {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.hd username h2 span {
+    color: #3a5a40;
+    text-decoration: none;
+}
+
+.username i {
+    margin: auto;
+    text-decoration: none;
+}
+
+.header-deux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgb(171, 171, 171);
+    background-color: #FAF9F6;
+    color: #3a5a40;
+    padding: 10px;
+    padding-top:15px ;
+    padding-bottom:15px ;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.header-deux span {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12px;
+    /* border: #FAF9F6 1px solid; */
+    text-decoration: none;
+}
+
+.header-deux i {
+    color: #3a5a40;
+    margin: auto;
+    text-decoration: none;
+}
+
+.username-deux{
+    text-decoration: none;
+}
+
+.header-deux username-deux h3 {
+    color: #3a5a40;
+    display: flex;
+    flex-direction: row;
+text-decoration: none;
+}
+
+.header-deux div{
+    text-decoration: none;
+}
+
+.header-deux div h3 span {
+    color: #3a5a40;
+    text-decoration: none;
+}
+
+.username-deux h3 {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.button {
+    --color: #3a5a40;
+    padding: 9px;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: small;
+    border: 1px solid;
+    font-family: inherit;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1.5em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: #FAF9F6;
+    text-decoration: none;
+    font-weight: normal;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   /* ===== Responsive Enhancements for Header and Buttons ===== */
+
+@media (max-width: 768px) {
+    .header,
+/*     .header-deux {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      padding: 10px;
+    } */
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+  }
+    .header span,
+    .header-deux span {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .header h2,
+    .header-deux h3 {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  
+    .username h2,
+/*     .username-deux h3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    } */
+  
+    .button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header,
+    .header-deux {
+      gap: 10px;
+    }
+  
+    .header h2,
+    .header-deux h3 {
+      font-size: medium;
+    }
+  
+    .button {
+      font-size: 0.85rem;
+      padding: 7px 9px;
+    }
+  }
+  

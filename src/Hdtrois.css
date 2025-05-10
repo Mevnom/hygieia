@@ -1,0 +1,71 @@
+.dhd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    /* border-bottom: 0.5px solid rgb(171, 171, 171); */
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.dhd span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dhd h2 {
+    color: #3a5a40;
+    margin-left: 0px;
+    font-size: large;
+
+}
+.dhd h2 a{
+  text-decoration: none;
+  color: #3a5a40;
+}
+
+
+/* ===== Responsive Enhancements for .defaultheader ===== */
+
+@media (max-width: 1024px) {
+  .dhd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-bottom: 0.5px solid rgb(171, 171, 171); */
+}
+  }
+  
+  @media (max-width: 768px) {
+    .dhd {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* border-bottom: 0.5px solid rgb(171, 171, 171); */
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .dhd {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* border-bottom: 0.5px solid rgb(171, 171, 171); */
+      padding: 0px;
+  }
+  }
+  
+  /* ===== Simulated Hover Effects for Mobile Touch Devices ===== */
+  @media (hover: none) and (pointer: coarse) {
+    .defaultheader div h2 a,
+    .username i,
+    .defaultheader i {
+      animation: mobile-hover-icon 2s ease-in forwards;
+    }
+  
+    @keyframes mobile-hover-icon {
+      0% { color: #3a5a40; transform: scale(1); }
+      100% { color: #2d6a4f; transform: scale(1.15); }
+    }
+  }
+  

@@ -1,0 +1,192 @@
+body {
+  background-color: #FAF9F6;
+  font-family: poppins;
+  /*margin: 0px;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+h3,h1 {
+  color: #3a5a40;
+  text-decoration: none;
+
+}
+/* RESPONSIVE ONLY — No Style Changes */
+
+
+/* For body section (whois-hygieia) responsiveness */
+@media (max-width: 768px) {
+  .whois-hygieia {
+    width: 90%;
+    padding: 0 1rem;
+  }
+
+  .body-uno > span h2 {
+    font-size: 2rem;
+  }
+
+  .body-uno > div {
+    flex-direction: column;
+  }
+
+  .body-uno > div > div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .body-unoimg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .body-unoimg:hover::before,
+  .body-unoimg:hover::after {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* For Cart responsiveness */
+@media (max-width: 768px) {
+  .cart-container {
+    width: 100%;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .cart-heading {
+    font-size: 1.5rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-name {
+    font-size: 1rem;
+  }
+
+  .cart-item-price {
+    font-size: 0.9rem;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* For Contact Page responsiveness */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .contact-page h2,
+  .contact-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    padding: 1rem;
+  }
+}
+
+/* For Hamburger Menu responsiveness */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    padding: 0 10px;
+  }
+
+  .menu {
+    width: 100%;
+    top: 50px;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .menu ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .menu li:hover {
+    background-color: #e8e1d4;
+  }
+}
+
+/* For Header responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header span {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* For Overall Header-Deux responsiveness */
+@media (max-width: 768px) {
+  .header-deux {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .header-deux span {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-deux,
+  .header {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .header span,
+  .header-deux span {
+    gap: 8px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

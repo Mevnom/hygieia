@@ -1,0 +1,138 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-form {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3a5a40;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 1px 12px 1px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #3a5a40;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3a5a40;
+    font-size: 18px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #3a5a40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-form button:hover {
+    background: #2f4932;
+  }
+  /* ===== Responsive Design Enhancements ===== */
+
+@media (max-width: 768px) {
+    .login-container {
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    .login-form {
+      padding: 30px 20px;
+      max-width: 90%;
+    }
+  
+    .input-group input {
+      font-size: 15px;
+      padding: 10px 8px;
+    }
+  
+    .login-form button {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 25px 16px;
+      border-radius: 10px;
+    }
+  
+    .input-group input {
+      font-size: 14px;
+    }
+  
+    .input-icon {
+      font-size: 16px;
+      left: 10px;
+    }
+  
+    .login-form h2 {
+      font-size: 20px;
+    }
+  
+    .login-form button {
+      font-size: 14px;
+      padding: 9px;
+    }
+  }
+  
+  /* ===== Simulate Hover on Mobile Devices ===== */
+  
+  @media (hover: none) and (pointer: coarse) {
+    .login-form button {
+      animation: mobile-hover-fake 1s ease-in forwards;
+    }
+  
+    @keyframes mobile-hover-fake {
+      0% {
+        background: #3a5a40;
+      }
+      100% {
+        background: #2f4932;
+      }
+    }
+  }
+  
+  
