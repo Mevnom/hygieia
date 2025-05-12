@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/hygieia/', // This must match the GitHub repo name
+  base: "/hygieia/", // This must match the GitHub repo name
 });
