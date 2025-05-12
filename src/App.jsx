@@ -27,20 +27,21 @@ function App() {
     <div className='container-uno'>
 
 
-{/*       <nav>
+      {/*       <nav>
         <Link to="/">Home</Link> |
         <Link to="/Login">Login</Link> |
         <Link to="/Signup">Contact</Link>
       </nav> */}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/UIprototype" element={<UIprototype />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />
-      </Routes>
-
+      <BrowserRouter basename="/hygieia">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/UIprototype" element={<UIprototype />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
 
       {/* <span>
         <Header />

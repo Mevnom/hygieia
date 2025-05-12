@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: "/hygieia/",
   plugins: [react()],
-  base: "/hygieia/", // This must match the GitHub repo name
+  // This must match the GitHub repo name
 });
