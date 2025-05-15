@@ -261,7 +261,7 @@ div {
   }
 }
 
-@media (min-width: 360px) {
+@media (max-width: 480px) {
   .slideshow-wrapper {
     position: relative;
     width: 98%;
