@@ -1,6 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header from './header.jsx';
 import RegisteredUser from './UserHeader.jsx';
 import UserBody from './UserBody.jsx';
@@ -32,8 +32,6 @@ function App() {
         <Link to="/Login">Login</Link> |
         <Link to="/Signup">Contact</Link>
       </nav> */}
-
-      <BrowserRouter basename="/hygieia">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Products" element={<Products />} />
@@ -41,7 +39,6 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
         </Routes>
-      </BrowserRouter>
 
       {/* <span>
         <Header />
