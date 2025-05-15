@@ -31,41 +31,41 @@ function Signup() {
 
     return (
         <div>
-           <span><DefaultHeader /></span> 
+            <span><DefaultHeader /></span>
             <br />
             <div className="signup-container">
-            <form className="signup-form" onSubmit={handleSignup}>
-                <h2>Create Account</h2>
+                <form className="signup-form" onSubmit={handleSignup}>
+                    <h2>Create Account</h2>
 
-                <div className="input-group">
-                    <FontAwesomeIcon icon={faUser} className="input-icon" />
-                    <input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
-                </div>
+                    <div className="input-group">
+                        <FontAwesomeIcon icon={faUser} className="input-icon" />
+                        <input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+                    </div>
 
-                <div className="input-group">
-                    <FontAwesomeIcon icon={faEnvelope} className="input-icon" />
-                    <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                </div>
+                    <div className="input-group">
+                        <FontAwesomeIcon icon={faEnvelope} className="input-icon" />
+                        <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    </div>
 
-                <div className="input-group">
-                    <FontAwesomeIcon icon={faLock} className="input-icon" />
-                    <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                </div>
+                    <div className="input-group">
+                        <FontAwesomeIcon icon={faLock} className="input-icon" />
+                        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    </div>
 
-                <div className="input-group">
-                    <FontAwesomeIcon icon={faLock} className="input-icon" />
-                    <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
-                </div>
+                    <div className="input-group">
+                        <FontAwesomeIcon icon={faLock} className="input-icon" />
+                        <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+                    </div>
+<br />
+                    <button type="submit">Sign Up</button>
 
-                <button type="submit">Sign Up</button>
-
-                <div className="signup-options">
-                    <div><Link to={"/"}>Forgot Password?</Link></div>
-                    <span>
-                        Already have an account? <Link to={"/Login"}>Login</Link>
-                    </span>
-                </div>
-            </form>
+                    <div className="signup-options">
+                        <div><Link to={"/"}>Forgot Password?</Link></div>
+                        <span>
+                            Already have an account? <Link to={"/Login"}>Login</Link>
+                        </span>
+                    </div>
+                </form>
             </div>
         </div>
     );

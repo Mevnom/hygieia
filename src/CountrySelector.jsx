@@ -17,7 +17,7 @@ const countries = [
     <div
     
     style={{
-        width:"30px",
+        width:"45px",
         position:"inherit"
     }}
     >

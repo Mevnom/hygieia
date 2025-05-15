@@ -14,6 +14,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    margin: auto;
   }
   
   .signup-form h2 {
@@ -28,6 +29,7 @@
     position: relative;
     margin-bottom: 1.2rem;
     width: inherit;
+    margin: auto;
   }
   
   .input-group input {
@@ -57,7 +59,11 @@
     border-radius: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .signup-form button:hover {
@@ -109,6 +115,10 @@
     font-size: 0.95rem;
     padding: 0.7rem 0.4rem;
   }
+
+.button-div{
+  margin: auto;
+}
 
   .signup-form button {
     font-size: 0.95rem;

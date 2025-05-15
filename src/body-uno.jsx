@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './body-uno.css'
 import Select from "react-select";
 import hygieia from './assets/hygieia.png'
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 
 const countryWelcomMessage = [
@@ -26,6 +28,10 @@ function Body() {
         setSelectedCountry(selectedOption);
     };
 
+      const alertM = () => {
+    alert('This feature will be available soon!')
+  };
+
 
     return (
         <div className="body">
@@ -42,7 +48,7 @@ function Body() {
                             The modern-day culture is shifting towards unhealthy living and artificial body conformations, hygieia is a software designed specifically to guide users towards healthy living, with software that is tailor-made to each user and functions based on user information.
                             The basic plan is a mobile application that keeps track of the user's activities and health status when they're wiith their mobile phones.
                             The advanced plan however, comes with modified accessories designed to keep track of the user's every activity and health status, this information is provided to the user along with tailor-made routines/diets/workouts so that they are constantly aware of their health status.
-                            Purchase <a href="">products</a> from hygieia or <a href="">subscribe</a> to get the full product description.
+                            Purchase <Link to={"/Products"}> <a href="">products</a> </Link> from hygieia or <a href="" onClick={alertM}>subscribe</a> to get the full product description.
                         </p>
                     </span>
                     <div>

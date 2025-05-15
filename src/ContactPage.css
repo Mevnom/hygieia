@@ -60,6 +60,7 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
+    width: 100%;
   }
   
   .contact-form button:hover {
@@ -67,7 +68,7 @@
   }
   /* ===== Responsive Enhancements for ContactPage ===== */
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .contact-page {
     padding: 1.5rem;
     max-width: 90%;
@@ -81,12 +82,11 @@
   .contact-form input,
   .contact-form textarea {
     font-size: 0.95rem;
-    padding: 0.7rem;
+    padding: 0.5rem;
   }
 
   .contact-form button {
     font-size: 0.95rem;
-    padding: 0.7rem;
   }
 
   .socials a {
@@ -96,7 +96,7 @@
 
 @media (max-width: 768px) {
   .contact-page {
-    padding: 1.2rem;
+    padding: 1.7rem;
   }
 
   .contact-page h1,
@@ -116,13 +116,13 @@
 
   .contact-form button {
     font-size: 0.9rem;
-    padding: 0.65rem;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .contact-page {
-    padding: 1rem 0.8rem;
+    padding: 1rem 1.2rem;
   }
 
   .contact-page h1,

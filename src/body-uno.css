@@ -131,21 +131,24 @@ margin-top: 10px;
 }
 /* ===== Responsive Enhancements for body-uno Section ===== */
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 /*     .body-uno>div {
       flex-direction: column;
       align-items: center;
     } */
   
+.body-uno p{ 
+  font-size: x-large;
+}
+
     .body-uno>div>div,
     .whois-hygieia {
       width: 90%;
       padding: 0 1rem;
     }
   
-    .body-uno> span h2 {
-      font-size: 37px;
-    }
+/*     .body-uno> span h2 {
+    } */
   }
   
   @media (max-width: 768px) {
