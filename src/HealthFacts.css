@@ -21,7 +21,7 @@ div {
   color: #FAF9F6;
   margin: auto;
   font-size: medium;
-  
+
   font-weight: medium;
 }
 
@@ -94,7 +94,7 @@ div {
   opacity: 1;
 }
 
-.slide:hover .slide-description{
+.slide:hover .slide-description {
   opacity: 1;
   transition: 0.2s;
 }
@@ -183,6 +183,7 @@ div {
     width: 100%;
   }
 }
+
 @media (min-width: 1024px) {
   .slide {
     width: 100%;
@@ -197,6 +198,7 @@ div {
     border-radius: 20px;
     border: none;
   }
+
   .slideshow-wrapper {
     position: relative;
     width: 99%;
@@ -210,7 +212,7 @@ div {
     border-radius: 20px;
     padding: 0.5%;
   }
-  
+
   .slideshow-container {
     display: flex;
     overflow-x: hidden;
@@ -237,6 +239,7 @@ div {
     border-radius: 20px;
     border: none;
   }
+
   .slideshow-wrapper {
     position: relative;
     width: 100%;
@@ -249,7 +252,7 @@ div {
     border: none;
     border-radius: 20px;
   }
-  
+
   .slideshow-container {
     display: flex;
     overflow-x: hidden;
@@ -274,7 +277,7 @@ div {
     border-radius: 20px;
     padding: 1%;
   }
-  
+
   .slideshow-container {
     display: flex;
     overflow-x: hidden;
@@ -284,6 +287,7 @@ div {
     border-radius: 20px;
     border: none;
   }
+
   .slide {
     width: 100%;
     height: 100%;
@@ -297,10 +301,22 @@ div {
     border-radius: 20px;
     border: none;
   }
+
   .slide-description {
-  font-size: small;
-  line-height: 1.4;
-  width: 100%;
-  opacity: 1;
-}
+    font-size: small;
+    line-height: 1.4;
+    width: 90%;
+    opacity: 1;
+    padding: 10px;
+  }
+
+  .slide-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+    display: 1;
+    padding: 10px;
+  }
 }
