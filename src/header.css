@@ -85,10 +85,6 @@ i {
     text-decoration: none;
 }
 
-.username-deux{
-    text-decoration: none;
-}
-
 .header-deux username-deux h3 {
     color: #3a5a40;
     display: flex;
@@ -109,8 +105,9 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     gap: 7px;
-    text-decoration: none;
+    text-decoration: overline;
 }
+
 
 .button {
     --color: #3a5a40;
