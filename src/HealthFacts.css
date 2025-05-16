@@ -265,7 +265,7 @@ div {
   .slideshow-wrapper {
     position: relative;
     width: 98%;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
     background-color: #f9f9f9;
     font-family: 'Segoe UI', sans-serif;
